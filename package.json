@@ -16,5 +16,5 @@
     "packages/*"
   ],
   "packageManager": "pnpm@8.15.6",
-  "name": "with-vite-react"
+  "name": "vite-react-turbo"
 }
