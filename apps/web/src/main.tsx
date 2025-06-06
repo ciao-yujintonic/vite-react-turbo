@@ -1,6 +1,6 @@
 import { createRoot } from "react-dom/client";
 import typescriptLogo from "/typescript.svg";
-import { Header, Counter } from "@repo/ui";
+import { Header, Counter, Button } from "@repo/ui";
 import "./style.css";
 
 const App = () => (
@@ -19,6 +19,7 @@ const App = () => (
     <div className="card">
       <Counter />
     </div>
+    <Button />
   </div>
 );
 
