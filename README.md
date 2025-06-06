@@ -30,3 +30,19 @@ This Turborepo has some additional tools already setup for you:
 - [TypeScript](https://www.typescriptlang.org/) for static type checking
 - [ESLint](https://eslint.org/) for code linting
 - [Prettier](https://prettier.io) for code formatting
+
+### Run the project
+
+- `pnpm`: We choose pnpm as our package manager because it provides efficient package management with a focus on disk space efficiency and performance by symlinking packages from a single store rather than copying them multiple times.
+
+```sh
+cd ~/vite-react-turbo
+pnpm run dev
+```
+
+- initiate the TurboRepo development environment to see if it intergrates correctly.
+
+```sh
+cd ~/vite-react-turbo
+npx turbo dev
+```
