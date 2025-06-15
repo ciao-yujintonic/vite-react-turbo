@@ -1,5 +1,9 @@
 import { Button as MuiButton } from "@mui/material";
 
-export const Button = () => {
-  return <MuiButton>Click me</MuiButton>;
+type ButtonProps = {
+  onClick: () => void;
+};
+
+export const Button = ({ onClick }: ButtonProps) => {
+  return <MuiButton onClick={onClick}>Click me</MuiButton>;
 };
