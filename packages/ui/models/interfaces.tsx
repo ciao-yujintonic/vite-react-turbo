@@ -1,9 +1,11 @@
-import { SvgIconComponent, THeaderIconType } from "./types";
+import { SvgIconTypeMap } from "@mui/material";
+import { OverridableComponent } from "@mui/material/OverridableComponent";
+import { THeaderIconType } from "./types";
 
 /* Header */
 export interface IHeaderIcon {
   /** The SVG icon component to display */
-  svgIcon: React.ComponentType<SvgIconComponent>;
+  svgIcon: OverridableComponent<SvgIconTypeMap<{}, "svg">>;
 
   /** Alternative text for the icon (for accessibility) */
   alt: string;
