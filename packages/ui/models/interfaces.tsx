@@ -24,6 +24,8 @@ export interface IHeaderIcon {
 
   /** The URL to open when the icon is clicked (optional)
    * if type is 'link', this should be provided
+   * if it only has a path, it will be treated as an internal route
+   * @example "https://example.com or /admin-list"
    */
   url?: string | undefined;
 
