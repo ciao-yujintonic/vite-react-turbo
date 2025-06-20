@@ -10,9 +10,11 @@
     "lint": "eslint \"src/**/*.ts\""
   },
   "dependencies": {
+    "@mui/icons-material": "^7.1.2",
     "@repo/ui": "workspace:*",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^7.6.2"
   },
   "devDependencies": {
     "@repo/eslint-config": "workspace:*",
