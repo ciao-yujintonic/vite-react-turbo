@@ -3,7 +3,7 @@ import { SvgIconComponent, THeaderIconType } from "./types";
 /* Header */
 export interface IHeaderIcon {
   /** The SVG icon component to display */
-  svgIcon: SvgIconComponent;
+  svgIcon: React.ComponentType<SvgIconComponent>;
 
   /** Alternative text for the icon (for accessibility) */
   alt: string;

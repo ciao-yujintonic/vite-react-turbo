@@ -1,5 +1,5 @@
-import { HeaderIconType } from "@/models/consts";
-import { IHeaderIcon } from "@/models/interfaces";
+import { HeaderIconType } from "../../models/consts";
+import { IHeaderIcon } from "../../models/interfaces";
 import { Stack } from "@mui/material";
 import HeaderIconLink from "./HeaderIconLink";
 

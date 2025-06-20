@@ -1,3 +1,4 @@
+import React from "react";
 import { IHeaderIcon } from "@/models/interfaces";
 import { Badge, IconButton, Tooltip } from "@mui/material";
 import { useNavigate } from "react-router-dom";
@@ -10,7 +11,7 @@ export default function HeaderIconLink({ icon }: Props) {
   const navigate = useNavigate();
 
   const handleOpenUrl = (url: string) => {
-    if (url.startsWith("http")) {
+    if (url && url.startsWith("http")) {
       window.open(url, "_blank", "noopener,noreferrer");
     } else {
       navigate(url);
@@ -41,10 +42,10 @@ export default function HeaderIconLink({ icon }: Props) {
             anchorOrigin={{ vertical: "bottom", horizontal: "right" }}
             sx={{ textTransform: "uppercase" }}
           >
-            {icon.svgIcon}
+            {React.createElement(icon.svgIcon)}
           </Badge>
         ) : (
-          icon.svgIcon
+          React.createElement(icon.svgIcon)
         )}
       </IconButton>
     </Tooltip>
