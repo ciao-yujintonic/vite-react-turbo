@@ -3,6 +3,12 @@
   // "compilerOptions": {
   //   "outDir": "./dist"
   // },
-  "include": ["components"],
-  "exclude": ["dist", "build", "node_modules"]
+  "include": ["components", "layouts", "models"],
+  "exclude": ["dist", "build", "node_modules"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./*"]
+    }
+  }
 }
