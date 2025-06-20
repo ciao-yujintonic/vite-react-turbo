@@ -1,15 +1,19 @@
-import { HeaderIconType } from "@/models/consts";
 import { IHeaderIcon } from "@/models/interfaces";
 import { Badge, IconButton, Tooltip } from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
 type Props = {
   icon: IHeaderIcon;
 };
 
-export default function HeaderIcon({ icon }: Props) {
+export default function HeaderIconLink({ icon }: Props) {
+  const navigate = useNavigate();
+
   const handleOpenUrl = (url: string) => {
-    if (url) {
+    if (url.startsWith("http")) {
       window.open(url, "_blank", "noopener,noreferrer");
+    } else {
+      navigate(url);
     }
   };
 
