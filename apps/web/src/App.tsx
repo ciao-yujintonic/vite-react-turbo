@@ -1,10 +1,10 @@
+import { SEThemeProvider } from "@repo/ui/themes";
 import {
-  Counter,
-  Button,
-  FeedbackDialog,
   HeaderActionMenus,
-  SEThemeProvider,
-} from "@repo/ui";
+  FeedbackDialog,
+  Button,
+  Counter,
+} from "@repo/ui/components";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import { iconData, theme } from "./data";
