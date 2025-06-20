@@ -1,5 +1,5 @@
-import path from "node:path";
-import { fileURLToPath } from "node:url";
+import path from "path";
+import { fileURLToPath } from "url";
 
 import { defineConfig } from "vitest/config";
 
@@ -30,10 +30,5 @@ export default defineConfig({
         },
       },
     ],
-  },
-  resolve: {
-    alias: {
-      "@": path.resolve(dirname, "../../"), // Adjust this path to your monorepo root
-    },
   },
 });
