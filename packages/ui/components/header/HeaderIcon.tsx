@@ -18,21 +18,8 @@ export default function HeaderIcon({ icon }: Props) {
       icon.onClick();
     }
 
-    switch (icon.type) {
-      case HeaderIconType.LINK:
-        if (icon.url) {
-          handleOpenUrl(icon.url);
-        }
-        break;
-      case HeaderIconType.DROPDOWN:
-        //TODO: Implement dropdown logic
-        break;
-      case HeaderIconType.USER:
-        //TODO: Implement user profile logic
-        break;
-      default:
-        console.warn("Unhandled icon type:", icon.type);
-        return;
+    if (icon.url) {
+      handleOpenUrl(icon.url);
     }
   };
 
