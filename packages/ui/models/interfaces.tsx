@@ -34,3 +34,17 @@ export interface IHeaderIcon {
   /** Callback function when the icon is clicked (optional) */
   onClick?: () => void;
 }
+
+export interface IDeletableChip {
+  /** Unique identifier for the chip */
+  key: string;
+
+  /** The label to display on the chip */
+  label: string;
+
+  /** Callback function when the chip is deleted */
+  onDelete: (key?: string) => void;
+
+  /** Optional tooltip text for the chip */
+  tooltip?: string;
+}

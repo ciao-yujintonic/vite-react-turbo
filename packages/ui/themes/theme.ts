@@ -14,6 +14,11 @@ const baseTheme = createTheme({
     MuiIconButton: {
       styleOverrides: {},
     },
+    MuiTooltip: {
+      styleOverrides: {
+        // TODO: should be updated
+      },
+    },
   },
   // ...addtr theme customizations
 });
